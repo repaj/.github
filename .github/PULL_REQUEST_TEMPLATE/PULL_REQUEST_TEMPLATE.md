@@ -8,14 +8,14 @@ Thank you for submitting a pull request! Here are a few tips to help your PR get
 -->
 
 **What type of PR is this?**
-<!-- Uncomment and remove the leading whitespace on the appropriate line -->
-> /kind new-feature  
-> /kind bug-fix  
-> /kind cleanup  
-> /kind revert-change  
-> /kind design  
-> /kind documentation  
-> /kind enhancement  
+<!-- Select one by placing an "x" in the box -->
+- [ ] new feature
+- [ ] bug fix
+- [ ] cleanup
+- [ ] revert change
+- [ ] design
+- [ ] documentation
+- [ ] enhancement
 
 **What this PR does / why we need it**:
 <!-- Provide a clear and concise explanation of the purpose of this PR and the problem it solves -->
@@ -33,9 +33,9 @@ Fixes #
 -->
 
 **Test Status:**
-<!-- Uncomment the correct status -->
-> /kind TESTED  
-> /kind NOT-TESTED  
+<!-- Select one by placing an "x" in the box -->
+- [ ] TESTED
+- [ ] NOT TESTED
 
 **Special notes for your reviewer:**
 <!-- Add any additional information or context for the reviewer here -->
