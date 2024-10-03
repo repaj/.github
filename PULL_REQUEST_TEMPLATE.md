@@ -1,5 +1,6 @@
-<!-- 
-<!--  Thanks for sending a pull request!  Here are some tips for you:
+<!--  
+This is a markup-based template. Please use the preview box to review your PR before submitting, and verify that all necessary details are correct.
+Thanks for sending a pull request!  Here are some tips for you:
 
 1. Please give clear description and fill all the needed fields in the PR template below
 2. Provide all the test report and results for the PR. It is mandatory. Otherwise, 
@@ -9,7 +10,9 @@
 -->
 
 **What type of PR is this?**
-<!-- Select one by placing an "x" in the box -->
+<!-- Select one by placing an "x" in the box (do exactly as shown in the template)
+exmaple  : - [X] new feature
+-->
 - [ ] new feature
 - [ ] bug fix
 - [ ] cleanup
