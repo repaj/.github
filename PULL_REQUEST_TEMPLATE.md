@@ -1,3 +1,4 @@
+<!-- 
 <!--  Thanks for sending a pull request!  Here are some tips for you:
 
 1. Please give clear description and fill all the needed fields in the PR template below
@@ -8,17 +9,17 @@
 -->
 
 **What type of PR is this?**
-> Uncomment only one ` /kind <>` line, hit enter to put that in a new line, and remove leading whitespace from that line:
->
-> /kind new feature
-> /kind bug fix
-> /kind cleanup
-> /kind revert change
-> /kind design
-> /kind documentation
-> /kind enhancement
+<!-- Select one by placing an "x" in the box -->
+- [ ] new feature
+- [ ] bug fix
+- [ ] cleanup
+- [ ] revert change
+- [ ] design
+- [ ] documentation
+- [ ] enhancement
 
 **What this PR does / why we need it**:
+<!-- Provide a clear and concise explanation of the purpose of this PR and the problem it solves -->
 
 **Which issue(s) this PR fixes**:
 <!--
@@ -28,14 +29,15 @@ Usage: `Fixes #<issue number>`, or `Fixes (paste link of issue)`.
 Fixes #
 
 **Test Report Added?**:
-> Uncomment only one ` /kind <>` line, hit enter to put that in a new line, and remove leading whitespace from that line:
-> /kind TESTED
-> /kind NOT-TESTED
-
 **Test Report**:
 <!--
 *Please provide the test report link (public accessible, screen shot or copy paste the test report, 
 or add the testing details.
 -->
 
-**Special notes for your reviewer**:
+<!-- Select one by placing an "x" in the box -->
+- [ ] TESTED
+- [ ] NOT TESTED
+
+**Special notes for your reviewer:**
+<!-- Add any additional information or context for the reviewer here -->
