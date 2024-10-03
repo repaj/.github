@@ -1,0 +1,42 @@
+name: PR Compliance Check
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  check-compliance:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Python
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      # Install necessary dependencies (if any, e.g., specific Python libraries)
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # Install any libraries if needed
+
+      # Run the PR compliance check script
+      - name: Run PR Compliance Check
+        run: python pr_compliance_check.py
+
+      # Post the result of the check (if non-compliant)
+      - name: Check Compliance
+        id: compliance
+        run: |
+          compliance_result=$(python pr_compliance_check.py)
+          echo "$compliance_result"
+          if [[ "$compliance_result" != *"PR is compliant"* ]]; then
+            echo "::error ::PR Compliance Check failed. Please fix the following issues:"
+            echo "$compliance_result"
+            exit 1
+          fi
