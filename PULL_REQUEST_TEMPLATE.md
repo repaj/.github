@@ -1,5 +1,5 @@
 <!--  
-This is a markup-based template. Please use the preview box to review your PR before submitting, and verify that all necessary details are correct.
+This is a markup-based template. Use the preview box to review your PR before submitting, and verify that all necessary details are correct.
 Thanks for sending a pull request!  Here are some tips for you:
 
 1. Please give clear description and fill all the needed fields in the PR template below
@@ -44,3 +44,4 @@ or add the testing details.
 
 **Special notes for your reviewer:**
 <!-- Add any additional information or context for the reviewer here -->
+
