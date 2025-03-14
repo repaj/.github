@@ -1,0 +1,48 @@
+name: Mandatory Fields Issue Form
+description: Missing fields will prevent submission.
+title: "[Issue]<Title>"
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "**Please select the milestone and label(s). These fields are mandatory.**"
+  - type: dropdown
+    id: milestone
+    attributes:
+      label: Milestone
+      description: "Select a milestone for this issue."
+      options: ["m0.1","beta","project version","vision","alpha"]
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: labels
+    attributes:
+      label: Labels
+      description: "Select one or more labels for this issue."
+      options: ["bug","documentation","duplicate","enhancement","Error","good first issue","help wanted","invalid","question","wontfix"]
+      multiple: true
+    validations:
+      required: true
+  - type: textarea
+    id: issue_description
+    attributes:
+      label: Issue/Feature Description
+      description: "Provide a detailed description of the issue or feature request."
+      placeholder: "Enter the details here..."
+    validations:
+      required: true
+  - type: textarea
+    id: why_needed
+    attributes:
+      label: Why this issue needs to be fixed / feature is needed
+      description: "Provide scenarios or use cases to explain the need for this issue or feature."
+      placeholder: "Enter the scenarios or use cases here..."
+    # validations:
+    #   required: true
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: Other Notes / Environment Information
+      description: "Provide any additional information, such as environment details or log links."
+      placeholder: "Enter other notes or information here..."
